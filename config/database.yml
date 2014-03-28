@@ -1,16 +1,21 @@
 default: &default
-  adapter: sqlite3
+  adapter: mysql2
   pool: 5
   timeout: 5000
 
 development:
   <<: *default
-  database: db/development.sqlite3
+  database: dev
+  username: root
+  password: roland57
+
 test:
   <<: *default
-  database: db/test.sqlite3
+  database: test
+  username: root
+  password: roland57
 production:
-  adapter: postgresql
-  database: my_database_production
-  pool: 5
-  timeout: 5000
+  <<: *default
+  database: prod
+  username: root
+  password:
