@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 gem "therubyracer"
 gem "less-rails"
 gem "twitter-bootstrap-rails"
-gem "mysql2"
+gem "sqlite3"
 gem 'rails', '4.1.0.rc1'
 gem 'sass-rails', '~> 4.0.1'
 gem 'uglifier', '>= 1.3.0'
